@@ -21,7 +21,7 @@ apis:
     type: SourceCode
     name: QuEra Braket Examples
   - url: https://github.com/QuEraComputing/quera-ahs-utils
-    type: SDK
+    type: SDKs
     name: quera-ahs-utils
   description: Aquila is QuEra's 256-qubit neutral-atom quantum computer, the first publicly accessible neutral-atom
     QPU. It runs Analog Hamiltonian Simulation (AHS) programs and is accessed programmatically through Amazon
@@ -64,7 +64,7 @@ apis:
   - url: https://github.com/QuEraComputing/bloqade-analog
     type: SourceCode
   - url: https://pypi.org/project/bloqade-analog/
-    type: SDK
+    type: SDKs
     name: bloqade-analog on PyPI
   - url: https://github.com/QuEraComputing/bloqade-analog-examples
     type: SourceCode
@@ -137,7 +137,8 @@ apis:
   properties:
   - url: https://github.com/QuEraComputing/tsim
     type: SourceCode
-  description: tsim is QuEra's open-source fast universal quantum circuit sampler for QEC based on ZX stabilizer
+  description: |-
+    tsim is QuEra's open-source fast universal quantum circuit sampler for QEC based on ZX stabilizer
     rank decomposition. Released April 2026 alongside the paper "Tsim: Fast Universal Simulator for Quantum
     Error Correction," it enables large-scale simulation of logical quantum circuits.
 - aid: quera-computing:bloqade-shuttle-lanes
@@ -195,16 +196,16 @@ common:
   url: https://www.linkedin.com/company/quera-computing-inc
 - type: GettingStarted
   url: https://github.com/QuEraComputing/QuEra-braket-examples
-- type: SDK
+- type: SDKs
   url: https://pypi.org/project/bloqade-analog/
   name: bloqade-analog (Python)
-- type: SDK
+- type: SDKs
   url: https://github.com/QuEraComputing/Bloqade.jl
   name: Bloqade.jl (Julia)
-- type: SDK
+- type: SDKs
   url: https://github.com/QuEraComputing/bloqade-circuit
   name: bloqade-circuit (Python, gate-model)
-- type: SDK
+- type: SDKs
   url: https://github.com/QuEraComputing/kirin
   name: Kirin Compiler IR
 - type: SourceCode
