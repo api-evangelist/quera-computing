@@ -179,6 +179,8 @@ kind: contract
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
+- type: DomainSecurity
+  url: security/quera-computing-domain-security.yml
 - type: Portal
   url: https://www.quera.com/
 - type: Documentation
@@ -198,6 +200,8 @@ common:
   url: https://github.com/QuEraComputing/QuEra-braket-examples
 - type: SDKs
   url: https://pypi.org/project/bloqade-analog/
+- url: https://www.quera.com/blog
+  type: Blog
   name: bloqade-analog (Python)
 - type: SDKs
   url: https://github.com/QuEraComputing/Bloqade.jl
