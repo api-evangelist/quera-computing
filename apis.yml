@@ -190,6 +190,9 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quera-computing.png
 access: 3rd-Party
 common:
+- type: License
+  name: Apache-2.0
+  url: https://github.com/QuEraComputing/tsim/blob/main/LICENSE
 - type: DomainSecurity
   url: security/quera-computing-domain-security.yml
 - type: Portal
