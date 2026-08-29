@@ -176,6 +176,19 @@ tags:
 - Bloqade
 - Hardware
 kind: contract
+deliveryModel:
+  model: open-core
+  license: Apache-2.0
+  open_source: true
+  commercial: true
+  callable_host: false
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: high
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -190,6 +203,12 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quera-computing.png
 access: 3rd-Party
 common:
+- type: IssueTracker
+  url: https://github.com/QuEraComputing/tsim/issues
+- type: Releases
+  url: https://github.com/QuEraComputing/tsim/releases
+- type: ContributionGuide
+  url: https://github.com/QuEraComputing/tsim/blob/main/CONTRIBUTING.md
 - type: License
   name: Apache-2.0
   url: https://github.com/QuEraComputing/tsim/blob/main/LICENSE
