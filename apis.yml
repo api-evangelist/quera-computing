@@ -114,6 +114,11 @@ apis:
   name: Kirin Kernel IR Infrastructure
   tags:
   - Quantum Computing
+  - Compilers
+  - Intermediate Representation
+  - Python
+  tags_raw:
+  - Quantum Computing
   - Compiler
   - Intermediate Representation
   - Python
@@ -148,6 +153,12 @@ apis:
 - aid: quera-computing:bloqade-shuttle-lanes
   name: Bloqade Shuttle and Lanes Compilation SDKs
   tags:
+  - Quantum Computing
+  - Compilers
+  - Atom Shuttling
+  - Python
+  - Neutral Atom
+  tags_raw:
   - Quantum Computing
   - Compiler
   - Atom Shuttling
