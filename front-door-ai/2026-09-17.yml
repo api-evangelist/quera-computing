@@ -1,0 +1,27 @@
+# Front Door AI Index — quera-computing — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: quera-computing
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: quera.com
+  final_host: www.quera.com
+  ownership: inherited
+  owner: quera-computing
+  shares_host_with: null
+  inherited_from: www.quera.com
+  verdict: scored
+  score: null
+  host_score: 8
+  density: null
+  words: 2949
+  tiers:
+    agentic: 0
+    core: 6
+    model: 2
+  ambiguous: 1
+  top_terms:
+    AI: 6
+    Claude: 2
+    intelligence: 1
