@@ -7,14 +7,17 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: quera.com
   final_host: www.quera.com
-  ownership: inherited
+  ownership: own
   owner: quera-computing
   shares_host_with: null
-  inherited_from: www.quera.com
+  inherited_from: null
+  alias_of: www.quera.com
   verdict: scored
-  score: null
+  score: 8
+  band: 4
+  band_label: moderate
   host_score: 8
-  density: null
+  density: 2.71
   words: 2949
   tiers:
     agentic: 0
