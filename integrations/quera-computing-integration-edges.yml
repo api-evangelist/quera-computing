@@ -1,0 +1,32 @@
+edges:
+- partner_name: QED-C (Quantum Economic Development Consortium)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://quantumconsortium.org/members/
+  category: quantum industry consortium
+  contract_reference:
+    register: QED-C members (quantumconsortium.org/members, Corporate)
+    standard: null
+    spec_file: null
+    role: qedc-member
+    registered_name: QuEra Computing
+    register_id: https://quantumconsortium.org/members/
+    member_class: Corporate
+    founding_member: true
+    matched_domain: quera.com
+    matched_by: domain+name-among-holders
+    signal_note: 'participation only: consortium membership; founding status is context, never counted'
+    detected_by: sweep-quantum-computing.py
+    detected: '2026-10-20'
+  detected_by: sweep-quantum-computing.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://quantumconsortium.org/members/
+checked:
+- https://quantumconsortium.org/members/
