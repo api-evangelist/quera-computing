@@ -1,4 +1,4 @@
-# QuEra Computing (quera-computing)
+# QuEra Computing
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,94 +66,93 @@
 
 QuEra Computing is a Boston-based neutral-atom quantum computing company (founded 2018) that operates Aquila, a 256-qubit Analog Hamiltonian Simulation QPU available publicly through Amazon Braket, and Gemini-class, a 260-qubit gate-model neutral-atom system used for fault-tolerant logical-qubit research with Harvard and MIT. QuEra has no native public REST API; developers submit programs to Aquila through the AWS Braket task API using QuEra's Bloqade SDKs (bloqade-analog for Python hardware submission, Bloqade.jl for Julia emulation, bloqade-circuit for gate-model programs), built on the Kirin compiler IR. Additional open-source tools include tsim (QEC circuit sampling), bloqade-shuttle, bloqade-lanes, and bloqade-decoders for the Dynamic Qubit Array compilation stack.
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/quera-computing/refs/heads/main/apis.yml)
+**Areas:** Quantum Computing · Neutral Atom · Analog Hamiltonian Simulation · AWS Braket · Aquila · Gemini · Fault Tolerance · Quantum Error Correction · Bloqade · Hardware
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## QuEra Computing on APIs.io
 
-## Tags
+Everything profiled for QuEra Computing is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/quera-computing/](https://apis.io/providers/quera-computing/)** — or go straight to one of the APIs or properties below.
 
-- Quantum Computing, Neutral Atom, Analog Hamiltonian Simulation, AWS Braket, Aquila, Gemini, Fault Tolerance, Quantum Error Correction, Bloqade, Hardware
+### APIs (8)
 
-## Timestamps
+- [QuEra Aquila on AWS Braket](https://apis.io/apis/quera-computing/quera-aquila-aws-braket/) — Aquila is QuEra's 256-qubit neutral-atom quantum computer, the first publicly accessible neutral-atom QPU. It runs Analog Hamiltonian Simulation (AHS)…
+- [QuEra Gemini Neutral-Atom Quantum Computer](https://apis.io/apis/quera-computing/quera-gemini-system/) — Gemini-class is QuEra's gate-model neutral-atom quantum computer with 260 Rubidium-87 physical qubits, all-to-all connectivity across two operational zones…
+- [Bloqade Analog Python SDK](https://apis.io/apis/quera-computing/bloqade-analog-sdk/) — Bloqade Analog (pip install bloqade-analog) is QuEra's Python SDK for writing, simulating, and submitting analog Hamiltonian programs to QuEra neutral-atom…
+- [Bloqade Circuit Python SDK](https://apis.io/apis/quera-computing/bloqade-circuit-sdk/) — Bloqade Circuit is the gate-model eDSL component of the Bloqade family, built on the Bloqade Core eDSL infrastructure (Apache-2.0). It targets…
+- [Bloqade.jl Julia SDK](https://apis.io/apis/quera-computing/bloqade-jl-sdk/) — Bloqade.jl is QuEra's Julia package for quantum computation and quantum simulation based on the neutral-atom architecture. It is emulation-first, supporting…
+- [Kirin Kernel IR Infrastructure](https://apis.io/apis/quera-computing/kirin-ir/) — Kirin (Kernel Intermediate Representation Infrastructure) is QuEra's Python compiler framework that underpins the Bloqade Core and Bloqade Circuit eDSLs. It…
+- [tsim Universal QEC Simulator](https://apis.io/apis/quera-computing/tsim/) — tsim is QuEra's open-source fast universal quantum circuit sampler for QEC based on ZX stabilizer rank decomposition. Released April 2026 alongside the…
+- [Bloqade Shuttle and Lanes Compilation SDKs](https://apis.io/apis/quera-computing/bloqade-shuttle-lanes/) — Bloqade Shuttle is the SDK for simulating and running neutral-atom programs with explicit atom movement; Bloqade Lanes is the atom-shuttle compiler for…
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+### Published properties
 
-## Hardware
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| System | Type | Qubits | Access | Notes |
-|---|---|---|---|---|
-| Aquila | Analog Hamiltonian Simulation (neutral atom) | 256 | AWS Braket (us-east-1) | ARN `arn:aws:braket:us-east-1::device/qpu/quera/Aquila`, $0.30/task + $0.01/shot |
-| Gemini-class | Gate-model (neutral atom, DQA shuttling) | 260 (Rb-87) | Pilot/Premium engagement | 1Q 99.9% / 2Q 99.2% reported fidelity; magic-state distillation demonstrated |
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### QuEra Aquila on AWS Braket
-QuEra's flagship 256-qubit neutral-atom Analog Hamiltonian Simulation QPU. Programs are submitted through Amazon Braket, not a QuEra-owned endpoint.
+- [Quera Computing Domain Security](https://apis.io/security/quera-computing/quera-computing-domain-security/)
 
-**Human URL:** [https://www.quera.com/aquila](https://www.quera.com/aquila)
+## Where to find this API
 
-- [Aquila product page](https://www.quera.com/aquila)
-- [AWS Braket device documentation](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
-- [QuEra Braket Examples](https://github.com/QuEraComputing/QuEra-braket-examples)
-- [quera-ahs-utils (helper Python package)](https://github.com/QuEraComputing/quera-ahs-utils)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### QuEra Gemini Neutral-Atom Quantum Computer
-Gate-model neutral-atom system with Dynamic Qubit Array (DQA) shuttling, all-to-all connectivity, and reported fidelities of 99.9% (1Q global), 99.2% (2Q). Access is via pilot collaboration rather than a self-service API.
+- [Website](https://quera.com)
+- [Documentation](https://bloqade.quera.com/)
+- [Getting started](https://github.com/QuEraComputing/QuEra-braket-examples)
+- [Pricing](https://aws.amazon.com/braket/pricing/)
+- [Blog](https://www.quera.com/blog)
+- [GitHub](https://github.com/QuEraComputing)
 
-**Human URL:** [https://www.quera.com/gemini](https://www.quera.com/gemini)
+## API Evangelist rating
 
-### Bloqade Analog Python SDK
-`pip install bloqade-analog` — hardware-first Python SDK for writing AHS programs and submitting them to Aquila on AWS Braket via `.braket.aquila().run_async()`.
+**Kin Score 22.4** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Human URL:** [https://bloqade.quera.com/](https://bloqade.quera.com/)
+| Facet | Score |
+|---|---|
+| Discoverability | 63.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 10.5 |
 
-- [GitHub](https://github.com/QuEraComputing/bloqade-analog)
-- [PyPI: bloqade-analog](https://pypi.org/project/bloqade-analog/)
-- [Examples](https://github.com/QuEraComputing/bloqade-analog-examples)
+**Agent readiness 0.0** — human-only
 
-### Bloqade Circuit Python SDK
-Gate-model eDSL component of the Bloqade family. Built on Bloqade Core (Apache-2.0) and integrates with the Kirin compiler IR. Targets gate-model neutral-atom hardware like Gemini.
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-**Human URL:** [https://github.com/QuEraComputing/bloqade-circuit](https://github.com/QuEraComputing/bloqade-circuit)
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-### Bloqade.jl Julia SDK
-Emulation-first Julia package for analog quantum simulation on neutral-atom architectures. CPU and GPU backends.
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/quera-computing/](https://apis.io/providers/quera-computing/).
 
-**Human URL:** [https://github.com/QuEraComputing/Bloqade.jl](https://github.com/QuEraComputing/Bloqade.jl)
+## How this profile is made
 
-### Kirin Kernel IR Infrastructure
-Python compiler framework providing the typed intermediate representation that underpins Bloqade Core and Bloqade Circuit. Pluggable dialects, analyses, and rewrites.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-**Human URL:** [https://github.com/QuEraComputing/kirin](https://github.com/QuEraComputing/kirin)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for QuEra Computing: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### tsim Universal QEC Simulator
-Fast universal ZX stabilizer-rank quantum circuit sampler for quantum error correction research. Released April 2026.
+## Open an issue
 
-**Human URL:** [https://github.com/QuEraComputing/tsim](https://github.com/QuEraComputing/tsim)
-
-### Bloqade Shuttle / Lanes / Decoders
-Compilation surface for QuEra's Dynamic Qubit Array hardware model — explicit atom-movement simulation (Shuttle), fixed-lane shuttle compilation (Lanes), and open-source QEC decoder integration (Decoders).
-
-- [bloqade-shuttle](https://github.com/QuEraComputing/bloqade-shuttle)
-- [bloqade-lanes](https://github.com/QuEraComputing/bloqade-lanes)
-- [bloqade-decoders](https://github.com/QuEraComputing/bloqade-decoders)
-
-## Common Properties
-
-- [Portal](https://www.quera.com/)
-- [Bloqade Documentation](https://bloqade.quera.com/)
-- [GitHub Organization](https://github.com/QuEraComputing)
-- [LinkedIn](https://www.linkedin.com/company/quera-computing-inc)
-- [AWS Braket Pricing](https://aws.amazon.com/braket/pricing/) (includes Aquila per-task / per-shot rates)
-- [QuEra Braket Examples (Getting Started)](https://github.com/QuEraComputing/QuEra-braket-examples)
-- [Contact](https://www.quera.com/contact)
-- [News](https://www.quera.com/news)
-
-## Notes on Tier
-
-QuEra is profiled as **Tier-3**: there is no QuEra-operated REST API, no QuEra-published OpenAPI spec, and no QuEra cloud authentication surface of its own. Programmatic access to Aquila is mediated by the AWS Braket task API, and the developer experience is delivered through QuEra's open-source SDKs (Bloqade family on Python and Julia, plus the Kirin compiler IR). Gemini-class access is gated behind pilot engagements and is not self-service.
-
-## Maintainer
-
-- Kin Lane / API Evangelist — [apievangelist.com](https://apievangelist.com)
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/quera-computing/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
